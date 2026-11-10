@@ -17,6 +17,14 @@ Shenzhen, China · 23 years in A/V since 2003
 
 #### Some concrete things
 
-- Car audio dropouts: the fix was rewriting the buffer write strategy, not tuning parameters.
-- 4K streaming over weak networks: retransmission and buffering; decoder reuse under multi-stream concurrency.
-- Two small tools for my kid: [posture-reminder](https://github.com/zhuxiangwei/posture-reminder) · [pen-grip-reminder](https://github.com/zhuxiangwei/pen-grip-reminder).
+- Running a 125B MoE (Qwen3.8-Flash-Next, Q6_K_XL) at **34.9–36.9 t/s** on a
+  128 GB unified-memory mini PC — 10+ hour sessions at 262K context, no throttling.
+- Three inference backends share one memory pool (125B MoE / 27B+MTP / video gen) —
+  switching costs a full reboot, because on unified memory concurrency is a
+  bandwidth problem, not a scheduling problem.
+- Benchmarks lied: a draft-decoding scheme gave **+47 % on a single-point bench**
+  and reversed in production A/B. Only one option stayed non-negative across
+  every context band.
+- Video VRAM peaks stay flat (52–53 GiB) across a 2.25× resolution range —
+  the constraint is time, not memory.
+
