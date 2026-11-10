@@ -13,19 +13,10 @@ Shenzhen, China · 23 years in A/V since 2003
 #### Currently working on
 
 - Regulatory video compliance integration: on-prem camera → government platform handshake → dashboard / app / backend.
-- [AI-MAX-395](https://github.com/zhuxiangwei/AI-MAX-395-Qwen3.6) series — hands-on records of deploying large models on unified-memory hardware.
+- [AI-MAX-395](https://github.com/zhuxiangwei/AI-MAX-395) series — hands-on records of deploying large models on unified-memory hardware.
 
 #### Some concrete things
 
 - Car audio dropouts: the fix was rewriting the buffer write strategy, not tuning parameters.
 - 4K streaming over weak networks: retransmission and buffering; decoder reuse under multi-stream concurrency.
 - Two small tools for my kid: [posture-reminder](https://github.com/zhuxiangwei/posture-reminder) · [pen-grip-reminder](https://github.com/zhuxiangwei/pen-grip-reminder).
-
-#### Background
-
-2003 → ZJMedia (WinAVI) · LeTV (mobile TV) · AIJI (R&D manager, patent CN102075818B) · Bangyan (TI8168 military terminals) · 10 years running my own studio · automotive head-unit since 2024.
-
-#### Contact
-
-- Email: `zhuxiangwei@hotmail.com`
-- WeChat: `zhuxiangwei822`
