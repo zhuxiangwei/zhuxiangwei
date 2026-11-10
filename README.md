@@ -1,4 +1,3 @@
-### Xiangwei Zhu · 朱祥巍
 
 **C/C++ · Audio/Video pipeline · Embedded · Local LLM inference**
 Shenzhen, China · 23 years in A/V since 2003
